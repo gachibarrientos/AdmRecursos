@@ -180,6 +180,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="misProyectos.aspx" />
+    <Content Include="nuestraMisionaspx.aspx" />
+    <Content Include="nuestraVision.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -361,7 +364,28 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="misProyectos.aspx.cs">
+      <DependentUpon>misProyectos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="misProyectos.aspx.designer.cs">
+      <DependentUpon>misProyectos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="nuestraMisionaspx.aspx.cs">
+      <DependentUpon>nuestraMisionaspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nuestraMisionaspx.aspx.designer.cs">
+      <DependentUpon>nuestraMisionaspx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nuestraVision.aspx.cs">
+      <DependentUpon>nuestraVision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nuestraVision.aspx.designer.cs">
+      <DependentUpon>nuestraVision.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

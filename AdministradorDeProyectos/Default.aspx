@@ -5,7 +5,7 @@
     <div class="jumbotron">
         <h1>Administración de Proyectos</h1>
         <p class="lead">Sitio Web desarrollado para la Administración de Proyectos de TheSoftwareFactory</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">&nbsp;Ver Proyectos &raquo;</a></p>
+        <p><a href="misProyectos.aspx" class="btn btn-primary btn-lg">&nbsp;Ver Proyectos &raquo;</a></p>
     </div>
 
     <div class="row">
@@ -15,7 +15,7 @@
                 Desarrollar una empresa dedicada a la creación e implementación de productos y servicios de software....
             </p>
             <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301948">Leer más &raquo;</a>
+                <a class="btn btn-default" href="nuestraMision.aspx">Leer más &raquo;</a>
             </p>
         </div>
         <div class="col-md-4">
@@ -24,7 +24,7 @@
                 Ser reconocidos como una de las empresas más serias y mejor posicionadas en el mercado del desarrollo de software...
             </p>
             <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301949">Leer más &raquo;</a>
+                <a class="btn btn-default" href="nuestraVision.aspx">Leer más &raquo;</a>
             </p>
         </div>
         <div class="col-md-4">
@@ -33,7 +33,7 @@
                Estudiantes de Ingeniería en Sistemas de Información Universidad Tecnológica Nacional - Facultad Regional Tucumán
             </p>
             <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301950">Leer más &raquo;</a>
+                <a class="btn btn-default" href="About.aspx">Leer más &raquo;</a>
             </p>
         </div>
     </div>
