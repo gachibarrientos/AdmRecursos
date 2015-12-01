@@ -20,7 +20,7 @@ namespace AdministradorDeProyectos
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["admproyectosConnectionString"].ConnectionString);
             conn.Open();
-            string checkuser = "select count(*) from userData where usuario='" + txtEmail.Text + "'";
+            string checkuser = "select count(*) from userData where email='" + txtEmail.Text + "'";
             SqlCommand com = new SqlCommand(checkuser, conn);
 
             int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
