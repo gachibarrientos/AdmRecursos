@@ -28,7 +28,7 @@ namespace AdministradorDeProyectos
             if (temp == 1)
             {
                 conn.Open();
-                string checkPassword = "select contraseña from userData where usuario='" + txtEmail.Text + "'";
+                string checkPassword = "select contraseña from userData where email='" + txtEmail.Text + "'";
                 SqlCommand passCom = new SqlCommand(checkPassword, conn);
                 string password = passCom.ExecuteScalar().ToString().Replace(" ","");
                 if (password == txtContraseña.Text)
