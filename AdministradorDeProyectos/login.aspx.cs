@@ -34,8 +34,13 @@ namespace AdministradorDeProyectos
                 if (password == txtContraseña.Text)
                 {
                     Session["New"] = txtEmail.Text;
-                    Response.Write("Contraseña correcta");
-                    //Response.Redirect("");
+                    if (Session["New"].Equals("admin@admin"))
+                    {
+                        Response.Redirect("misProyectosAdmin.aspx");
+                    }
+                    else {
+                        Response.Redirect("misProyectos.aspx");
+                    }
                 }
                 else
                 {

@@ -183,6 +183,7 @@
     <Content Include="login.aspx" />
     <Content Include="manager.aspx" />
     <Content Include="misProyectos.aspx" />
+    <Content Include="misProyectosAdmin.aspx" />
     <Content Include="nuestraMision.aspx" />
     <Content Include="nuestraVision.aspx" />
     <Content Include="registracion.aspx" />
@@ -387,6 +388,13 @@
     </Compile>
     <Compile Include="misProyectos.aspx.designer.cs">
       <DependentUpon>misProyectos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="misProyectosAdmin.aspx.cs">
+      <DependentUpon>misProyectosAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="misProyectosAdmin.aspx.designer.cs">
+      <DependentUpon>misProyectosAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="nuestraMision.aspx.cs">
