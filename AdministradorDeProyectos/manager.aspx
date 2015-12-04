@@ -8,5 +8,5 @@
         <asp:BoundField DataField="contraseña" HeaderText="contraseña" SortExpression="contraseña" />
     </Columns>
 </asp:GridView>
-<asp:SqlDataSource ID="SqlDataSourceuserData" runat="server" ConnectionString="<%$ ConnectionStrings:admproyectosConnectionString %>" SelectCommand="SELECT * FROM [userData]"></asp:SqlDataSource>
+<asp:SqlDataSource ID="SqlDataSourceuserData" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [userData]"></asp:SqlDataSource>
 </asp:Content>

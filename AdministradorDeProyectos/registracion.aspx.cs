@@ -14,7 +14,7 @@ namespace AdministradorDeProyectos
         protected void Page_Load(object sender, EventArgs e)
         {
             if (IsPostBack) {
-                SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["admproyectosConnectionString"].ConnectionString);
+                SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
                 conn.Open();
                 string checkuser = "select count(*) from userData where usuario='"+txtUsuario.Text+"'";
                 SqlCommand com = new SqlCommand(checkuser, conn);
@@ -31,7 +31,7 @@ namespace AdministradorDeProyectos
         {
             try
             {
-                SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["admproyectosConnectionString"].ConnectionString);
+                SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
                 conn.Open();
                 string insertQuery = "INSERT INTO userData (email, usuario, contraseña) values (@usu, @email, @contraseña) ";
                 SqlCommand com = new SqlCommand(insertQuery, conn);

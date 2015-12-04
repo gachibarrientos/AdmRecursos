@@ -18,7 +18,7 @@ namespace AdministradorDeProyectos
 
         protected void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["admproyectosConnectionString"].ConnectionString);
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
             conn.Open();
             string checkuser = "select count(*) from userData where email='" + txtEmail.Text + "'";
             SqlCommand com = new SqlCommand(checkuser, conn);
