@@ -25,5 +25,10 @@ namespace AdministradorDeProyectos
             Session["New"] = null;
             Response.Redirect("login.aspx");
         }
+
+        protected void btnNuevoProyecto_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("nuevoProyecto.aspx");
+        }
     }
     }

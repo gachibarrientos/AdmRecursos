@@ -183,7 +183,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
-    <Content Include="paginaMaestra.Master" />
+    <Content Include="nuevoProyecto.aspx" />
     <None Include="Properties\PublishProfiles\tswfactory.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="login.aspx" />
@@ -417,12 +417,12 @@
     <Compile Include="nuestraVision.aspx.designer.cs">
       <DependentUpon>nuestraVision.aspx</DependentUpon>
     </Compile>
-    <Compile Include="paginaMaestra.Master.cs">
-      <DependentUpon>paginaMaestra.Master</DependentUpon>
+    <Compile Include="nuevoProyecto.aspx.cs">
+      <DependentUpon>nuevoProyecto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="paginaMaestra.Master.designer.cs">
-      <DependentUpon>paginaMaestra.Master</DependentUpon>
+    <Compile Include="nuevoProyecto.aspx.designer.cs">
+      <DependentUpon>nuevoProyecto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="registracion.aspx.cs">
