@@ -192,6 +192,7 @@
     <Content Include="misProyectosAdmin.aspx" />
     <Content Include="nuestraMision.aspx" />
     <Content Include="nuestraVision.aspx" />
+    <Content Include="proyectoSeleccionado.aspx" />
     <Content Include="registracion.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -425,6 +426,13 @@
       <DependentUpon>nuevoProyecto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="proyectoSeleccionado.aspx.cs">
+      <DependentUpon>proyectoSeleccionado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="proyectoSeleccionado.aspx.designer.cs">
+      <DependentUpon>proyectoSeleccionado.aspx</DependentUpon>
+    </Compile>
     <Compile Include="registracion.aspx.cs">
       <DependentUpon>registracion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -30,5 +30,10 @@ namespace AdministradorDeProyectos
         {
             Response.Redirect("nuevoProyecto.aspx");
         }
+
+        protected void onSeleccionProyecto(object sender, EventArgs e) {
+            Session["idProyecto"] = tablaProyectos.SelectedDataKey.Value.ToString();
+            Response.Redirect("proyectoSeleccionado.aspx");
+         }
     }
     }

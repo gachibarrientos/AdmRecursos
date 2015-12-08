@@ -8,7 +8,7 @@
 
     <br />
     <br />
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="idProyecto" DataSourceID="SqlDataSource1" EmptyDataText="No hay registros de datos para mostrar.">
+    <asp:GridView ID="tablaProyectos" runat="server" AutoGenerateColumns="False" DataKeyNames="idProyecto" DataSourceID="SqlDataSource1" EmptyDataText="No hay registros de datos para mostrar." OnSelectedIndexChanged="onSeleccionProyecto">
         <Columns>
             <asp:CommandField ShowDeleteButton="True" ShowSelectButton="True" />
             <asp:BoundField DataField="idProyecto" HeaderText="idProyecto" ReadOnly="True" SortExpression="idProyecto" />
