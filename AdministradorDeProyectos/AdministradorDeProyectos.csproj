@@ -170,9 +170,12 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
-    <Content Include="App_Data\admproyectos.mdf" />
+    <Content Include="App_Data\admproyectos.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="App_Data\admproyectos_log.ldf">
       <DependentUpon>admproyectos.mdf</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />

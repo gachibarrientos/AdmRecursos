@@ -13,6 +13,15 @@ namespace AdministradorDeProyectos {
     public partial class nuevaTarea {
         
         /// <summary>
+        /// Control lbl1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl1;
+        
+        /// <summary>
         /// Control lblProyecto.
         /// </summary>
         /// <remarks>
@@ -58,15 +67,6 @@ namespace AdministradorDeProyectos {
         protected global::System.Web.UI.WebControls.GridView tablaEstacion;
         
         /// <summary>
-        /// Control boxEstacion.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList boxEstacion;
-        
-        /// <summary>
         /// Control SqlDataSource1.
         /// </summary>
         /// <remarks>
@@ -94,15 +94,6 @@ namespace AdministradorDeProyectos {
         protected global::System.Web.UI.WebControls.GridView tablaSala;
         
         /// <summary>
-        /// Control boxSala.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList boxSala;
-        
-        /// <summary>
         /// Control SqlDataSource2.
         /// </summary>
         /// <remarks>
@@ -128,15 +119,6 @@ namespace AdministradorDeProyectos {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView tablaPersonal;
-        
-        /// <summary>
-        /// Control boxPersonal.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList boxPersonal;
         
         /// <summary>
         /// Control SqlDataSource3.
