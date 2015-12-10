@@ -194,8 +194,6 @@
     <Content Include="manager.aspx" />
     <Content Include="misProyectos.aspx" />
     <Content Include="misProyectosAdmin.aspx" />
-    <Content Include="nuestraMision.aspx" />
-    <Content Include="nuestraVision.aspx" />
     <Content Include="proyectoSeleccionado.aspx" />
     <Content Include="proyectoSeleccionadoUser.aspx" />
     <Content Include="registracion.aspx" />
@@ -239,6 +237,7 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Site.Mobile.Master" />
+    <Content Include="Site2.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -409,20 +408,6 @@
       <DependentUpon>misProyectosAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="nuestraMision.aspx.cs">
-      <DependentUpon>nuestraMision.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="nuestraMision.aspx.designer.cs">
-      <DependentUpon>nuestraMision.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="nuestraVision.aspx.cs">
-      <DependentUpon>nuestraVision.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="nuestraVision.aspx.designer.cs">
-      <DependentUpon>nuestraVision.aspx</DependentUpon>
-    </Compile>
     <Compile Include="nuevaTarea.aspx.cs">
       <DependentUpon>nuevaTarea.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -472,6 +457,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">

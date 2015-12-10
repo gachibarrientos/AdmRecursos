@@ -11,7 +11,21 @@ namespace AdministradorDeProyectos
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["New"] != null)
+            {
+                if (lblBienvenido.Text != "")
+                {
 
+                }
+                else
+                {
+                    lblBienvenido.Text = Session["New"].ToString();
+                }
+            }
+            else
+            {
+                Response.Redirect("login.aspx");
+            }
         }
         protected void onSeleccionProyecto(object sender, EventArgs e)
         {
