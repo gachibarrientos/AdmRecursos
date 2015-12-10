@@ -9,12 +9,18 @@ namespace AdministradorDeProyectos
 {
     public partial class proyectoSeleccionado : System.Web.UI.Page
     {
+        string idProyecto;
         protected void Page_Load(object sender, EventArgs e)
         {
-            string idProyecto = Session["idProyecto"].ToString();
+            idProyecto = Session["idProyecto"].ToString();
             if (idProyecto!= null) {
                 lblProyecto.Text += idProyecto;
             }
+        }
+
+        protected void btnNuevaTarea_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("nuevaTarea.aspx");
         }
     }
 }

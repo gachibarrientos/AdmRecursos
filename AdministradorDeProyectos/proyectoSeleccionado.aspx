@@ -35,7 +35,7 @@
             <asp:Parameter Name="idTarea" Type="Int32" />
         </UpdateParameters>
     </asp:SqlDataSource>
-    <asp:Button ID="btnNuevaTarea" runat="server" Text="Nueva Tarea" />
+    <asp:Button ID="btnNuevaTarea" runat="server" Text="Nueva Tarea" OnClick="btnNuevaTarea_Click" />
     <br />
     <asp:Label ID="Label1" runat="server" Text="Descripción de Salas:"></asp:Label>
     <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="idSala" DataSourceID="SqlDataSource2" EmptyDataText="No hay registros de datos para mostrar.">
