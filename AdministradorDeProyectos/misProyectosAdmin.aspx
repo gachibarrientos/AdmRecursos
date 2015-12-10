@@ -2,7 +2,9 @@
 
 <asp:Content ID="Content1" runat="server" contentplaceholderid="MainContent">
 
-    <asp:Label ID="lblBienvenido" runat="server" Text="Bienvenido!"></asp:Label>
+    <asp:Label ID="lblBienvenido0" runat="server" Text="Bienvenido!"></asp:Label>
+
+    <asp:Label ID="lblBienvenido" runat="server"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <asp:Button ID="btnCerrarSesion" runat="server" OnClick="btnCerrarSesion_Click" Text="CerrarSesion" />
 

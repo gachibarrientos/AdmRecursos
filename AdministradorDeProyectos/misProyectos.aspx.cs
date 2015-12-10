@@ -13,5 +13,16 @@ namespace AdministradorDeProyectos
         {
 
         }
+        protected void onSeleccionProyecto(object sender, EventArgs e)
+        {
+            Session["idProyecto"] = tablaProyectos.SelectedDataKey.Value.ToString();
+            Response.Redirect("proyectoSeleccionadoUser.aspx");
+        }
+
+        protected void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            Session["New"] = null;
+            Response.Redirect("login.aspx");
+        }
     }
 }

@@ -13,6 +13,15 @@ namespace AdministradorDeProyectos {
     public partial class proyectoSeleccionado {
         
         /// <summary>
+        /// Control lblProyecto0.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblProyecto0;
+        
+        /// <summary>
         /// Control lblProyecto.
         /// </summary>
         /// <remarks>
@@ -22,13 +31,31 @@ namespace AdministradorDeProyectos {
         protected global::System.Web.UI.WebControls.Label lblProyecto;
         
         /// <summary>
-        /// Control GridView1.
+        /// Control lblProgreso0.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.Label lblProgreso0;
+        
+        /// <summary>
+        /// Control lblProgreso.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblProgreso;
+        
+        /// <summary>
+        /// Control tablaTareas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView tablaTareas;
         
         /// <summary>
         /// Control SqlDataSource1.

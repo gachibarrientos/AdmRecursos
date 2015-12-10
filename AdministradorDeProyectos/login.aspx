@@ -12,4 +12,6 @@
 <asp:RequiredFieldValidator runat="server" ControlToValidate="txtContraseña" CssClass="text-danger" ErrorMessage="El campo de contraseña es obligatorio." ID="RequiredFieldValidator2" />
 <br />
 <asp:Button ID="btnIniciarSesion" runat="server" OnClick="btnIniciarSesion_Click" Text="Iniciar Sesion" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:HyperLink ID="linkRegistro" runat="server" NavigateUrl="~/registracion.aspx">Registrarme</asp:HyperLink>
 </asp:Content>

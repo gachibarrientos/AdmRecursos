@@ -11,7 +11,7 @@ namespace AdministradorDeProyectos
 {
     public partial class nuevaTarea : System.Web.UI.Page
     {
-        string idProyecto, nroEstacion, idSala, legajo, descripcionTarea;
+        string idProyecto, descripcionTarea;
         protected void Page_Load(object sender, EventArgs e)
         {
             idProyecto = Session["idProyecto"].ToString();

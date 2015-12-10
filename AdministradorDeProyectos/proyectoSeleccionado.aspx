@@ -1,18 +1,24 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="proyectoSeleccionado.aspx.cs" Inherits="AdministradorDeProyectos.proyectoSeleccionado" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:Label ID="lblProyecto" runat="server" Text="Proyecto: "></asp:Label>
+    <asp:Label ID="lblProyecto0" runat="server" Text="Proyecto: "></asp:Label>
+    <asp:Label ID="lblProyecto" runat="server"></asp:Label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Label ID="lblProgreso0" runat="server" Text="Progreso: "></asp:Label>
+    <asp:Label ID="lblProgreso" runat="server"></asp:Label>
     <br />
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="idTarea" DataSourceID="SqlDataSource1" EmptyDataText="No hay registros de datos para mostrar.">
+    <asp:GridView ID="tablaTareas" runat="server" AutoGenerateColumns="False" DataKeyNames="idTarea" DataSourceID="SqlDataSource1" EmptyDataText="No hay registros de datos para mostrar.">
         <Columns>
-            <asp:BoundField DataField="idTarea" HeaderText="idTarea" ReadOnly="True" SortExpression="idTarea" />
-            <asp:BoundField DataField="descripcionTarea" HeaderText="descripcionTarea" SortExpression="descripcionTarea" />
-            <asp:BoundField DataField="nroEstacion" HeaderText="nroEstacion" SortExpression="nroEstacion" />
-            <asp:BoundField DataField="idSala" HeaderText="idSala" SortExpression="idSala" />
-            <asp:BoundField DataField="legajo" HeaderText="legajo" SortExpression="legajo" />
-            <asp:BoundField DataField="idProyecto" HeaderText="idProyecto" SortExpression="idProyecto" />
+            <asp:CommandField ShowEditButton="True" />
+            <asp:BoundField DataField="idTarea" HeaderText="idTarea" SortExpression="idTarea" InsertVisible="False" />
+            <asp:BoundField DataField="descripcionTarea" HeaderText="descripcionTarea" SortExpression="descripcionTarea" InsertVisible="False" />
+            <asp:BoundField DataField="nroEstacion" HeaderText="nroEstacion" SortExpression="nroEstacion" InsertVisible="False" />
+            <asp:BoundField DataField="idSala" HeaderText="idSala" SortExpression="idSala" InsertVisible="False" />
+            <asp:BoundField DataField="legajo" HeaderText="legajo" SortExpression="legajo" InsertVisible="False" />
+            <asp:BoundField DataField="idProyecto" HeaderText="idProyecto" SortExpression="idProyecto" InsertVisible="False" />
+            <asp:CheckBoxField DataField="estado" HeaderText="Finalizada: " SortExpression="estado" />
         </Columns>
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Tarea] WHERE [idTarea] = @idTarea" InsertCommand="INSERT INTO [Tarea] ([descripcionTarea], [nroEstacion], [idSala], [legajo], [idProyecto]) VALUES (@descripcionTarea, @nroEstacion, @idSala, @legajo, @idProyecto)" SelectCommand="SELECT [idTarea], [descripcionTarea], [nroEstacion], [idSala], [legajo], [idProyecto] FROM [Tarea] WHERE ([idProyecto] = @idProyecto)" UpdateCommand="UPDATE [Tarea] SET [descripcionTarea] = @descripcionTarea, [nroEstacion] = @nroEstacion, [idSala] = @idSala, [legajo] = @legajo, [idProyecto] = @idProyecto WHERE [idTarea] = @idTarea">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Tarea] WHERE [idTarea] = @idTarea" InsertCommand="INSERT INTO [Tarea] ([descripcionTarea], [nroEstacion], [idSala], [legajo], [idProyecto], [estado]) VALUES (@descripcionTarea, @nroEstacion, @idSala, @legajo, @idProyecto, @estado)" SelectCommand="SELECT [idTarea], [descripcionTarea], [nroEstacion], [idSala], [legajo], [idProyecto], [estado] FROM [Tarea] WHERE ([idProyecto] = @idProyecto)" UpdateCommand="UPDATE [Tarea] SET [descripcionTarea] = @descripcionTarea, [nroEstacion] = @nroEstacion, [idSala] = @idSala, [legajo] = @legajo, [idProyecto] = @idProyecto, [estado] = @estado WHERE [idTarea] = @idTarea">
         <DeleteParameters>
             <asp:Parameter Name="idTarea" Type="Int32" />
         </DeleteParameters>
@@ -22,6 +28,7 @@
             <asp:Parameter Name="idSala" Type="Int32" />
             <asp:Parameter Name="legajo" Type="Int32" />
             <asp:Parameter Name="idProyecto" Type="Int32" />
+            <asp:Parameter Name="estado" Type="Boolean" />
         </InsertParameters>
         <SelectParameters>
             <asp:SessionParameter Name="idProyecto" SessionField="idProyecto" Type="Int32" />
@@ -32,6 +39,7 @@
             <asp:Parameter Name="idSala" Type="Int32" />
             <asp:Parameter Name="legajo" Type="Int32" />
             <asp:Parameter Name="idProyecto" Type="Int32" />
+            <asp:Parameter Name="estado" Type="Boolean" />
             <asp:Parameter Name="idTarea" Type="Int32" />
         </UpdateParameters>
     </asp:SqlDataSource>

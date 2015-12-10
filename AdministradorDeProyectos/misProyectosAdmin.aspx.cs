@@ -13,7 +13,14 @@ namespace AdministradorDeProyectos
         {
             if (Session["New"] != null)
             {
-                lblBienvenido.Text += Session["New"].ToString();
+                if (lblBienvenido.Text != "")
+                {
+
+                }
+                else
+                {
+                    lblBienvenido.Text = Session["New"].ToString();
+                }
             }
             else {
                 Response.Redirect("login.aspx");

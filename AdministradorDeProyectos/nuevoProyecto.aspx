@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="nuevoProyecto.aspx.cs" Inherits="AdministradorDeProyectos.nuevoProyecto" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:Label ID="lblAdmin" runat="server" Text="Usuario Privilegiado: "></asp:Label>
+    <asp:Label ID="lbl0" runat="server" Text="Usuario Privilegiado: "></asp:Label>
+    <asp:Label ID="lblAdmin" runat="server"></asp:Label>
     <asp:Button ID="btnCerrarSesion" runat="server" OnClick="btnCerrarSesion_Click" Text="Cerrar Sesión" />
     <br />
     <br />
@@ -24,12 +25,12 @@
     <asp:Label ID="Label3" runat="server" Text="Fecha de Inicio:"></asp:Label>
     <br />
 &nbsp;&nbsp;
-    <asp:Calendar ID="fechaInicio" runat="server"></asp:Calendar>
+    <asp:Calendar ID="calInicio" runat="server"></asp:Calendar>
     <br />
     <asp:Label ID="Label4" runat="server" Text="Fecha de Fin:"></asp:Label>
 &nbsp;<br />
 &nbsp;&nbsp;
-    <asp:Calendar ID="fechaFin" runat="server"></asp:Calendar>
+    <asp:Calendar ID="calFin" runat="server"></asp:Calendar>
     <br />
-    <asp:Button ID="btnAceptarProyecto" runat="server" Text="Aceptar" />
+    <asp:Button ID="btnAceptarProyecto" runat="server" Text="Aceptar" OnClick="btnAceptarProyecto_Click" />
 </asp:Content>
