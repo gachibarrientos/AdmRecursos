@@ -48,6 +48,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -197,6 +198,7 @@
     <Content Include="proyectoSeleccionado.aspx" />
     <Content Include="proyectoSeleccionadoUser.aspx" />
     <Content Include="registracion.aspx" />
+    <Content Include="reporteProyectos.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -443,6 +445,13 @@
     </Compile>
     <Compile Include="registracion.aspx.designer.cs">
       <DependentUpon>registracion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reporteProyectos.aspx.cs">
+      <DependentUpon>reporteProyectos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reporteProyectos.aspx.designer.cs">
+      <DependentUpon>reporteProyectos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
