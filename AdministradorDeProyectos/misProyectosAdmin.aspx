@@ -55,6 +55,9 @@
     <br />
     <asp:Button ID="btnNuevoProyecto" runat="server" OnClick="btnNuevoProyecto_Click" Text="Nuevo Proyecto" CssClass="btn-primary" Font-Names="Segoe UI Light" />
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Button ID="btnImprimirProyecto" runat="server" OnClick="btnNuevoProyecto_Click" Text="Imprimir Proyectos" CssClass="btn-primary" Font-Names="Segoe UI Light" />
+
 </asp:Content>
 
 

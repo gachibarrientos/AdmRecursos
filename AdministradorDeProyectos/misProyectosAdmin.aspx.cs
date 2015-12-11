@@ -35,7 +35,8 @@ namespace AdministradorDeProyectos
 
         protected void btnNuevoProyecto_Click(object sender, EventArgs e)
         {
-            Response.Redirect("nuevoProyecto.aspx");
+            Response.Redirect("reporteProyectos.aspx");
+
         }
 
         protected void onSeleccionProyecto(object sender, EventArgs e) {
